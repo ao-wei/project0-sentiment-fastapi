@@ -1,0 +1,9 @@
+torch
+transformers>=4.45.0
+datasets
+
+fastapi
+uvicorn[standard]
+pydantic>=2.0
+
+streamlit

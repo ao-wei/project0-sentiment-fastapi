@@ -1,7 +1,6 @@
 # MacOS
 .DS_Store
-._.gitignore
-._README.md
+._*
 
 # Python virtual env
 .venv/
