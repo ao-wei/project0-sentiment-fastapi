@@ -1,0 +1,26 @@
+# MacOS
+.DS_Store
+._.gitignore
+._README.md
+
+# Python virtual env
+.venv/
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & Models
+data/
+models/
+
+# IDE config
+.vscode/
+.idea/
