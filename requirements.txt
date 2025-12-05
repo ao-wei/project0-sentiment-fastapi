@@ -7,3 +7,5 @@ uvicorn[standard]
 pydantic>=2.0
 
 streamlit
+
+numpy
