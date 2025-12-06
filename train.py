@@ -154,6 +154,8 @@ def create_model_and_trainer(
     train_dataset = tokenized_datasets["train"]
     eval_dataset = tokenized_datasets["test"]
 
+    print("Before Trainer, model.device =", next(model.parameters()).device)
+    # Trainer通常会自动把模型搬到合适的设备上，不需要自动手动.to("device")
     trainer = Trainer(
         model=model,
         args=training_args,
@@ -163,6 +165,7 @@ def create_model_and_trainer(
         data_collator=data_collator,
         compute_metrics=compute_metrics,
     )
+    print("After Trainer init, model.device =", next(trainer.model.parameters()).device)
 
     return model, trainer
 
